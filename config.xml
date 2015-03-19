@@ -2,14 +2,14 @@
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
 	xmlns:android   = "http://schemas.android.com/apk/res/android"
-        id          = "edu.iupui.n300.HelloWorld"
+        id          = "org.mitre.foneGap"
         version     = "1.0.0" >
 
-    <name>Hello World</name>
+    <name>Tres por Row</name>
 
     <description>
-        A hellow world example app.
-    </description>
+        Here you go.  Its 3 in a row.  Also called three in a row, but not tree in a ro.
+     </description>
 
     <author href="https://github.com/ProfessorKevinForbes/Hello World" email="professorkevinforbes@gmail.com">
         Kevin Forbes
