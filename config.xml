@@ -2,14 +2,14 @@
     <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
 	xmlns:android   = "http://schemas.android.com/apk/res/android"
-        id          = "org.mitre.foneGap"
+        id          = "edu.iupui.n300.HelloWorld"
         version     = "1.0.0" >
 
-    <name>Tres por Row</name>
+    <name>EPIC TEST</name>
 
     <description>
-        Here you go.  Its 3 in a row.  Also called three in a row, but not tree in a ro.
-     </description>
+        Test app
+    </description>
 
     <author href="https://github.com/ProfessorKevinForbes/Hello World" email="professorkevinforbes@gmail.com">
         Kevin Forbes
@@ -18,6 +18,7 @@
 	<icon src="icon.png" />
 	<gap:splash src="splash.png" />
 
+	<gap:platform name="ios" />
 	<gap:platform name="android" />
 
 
