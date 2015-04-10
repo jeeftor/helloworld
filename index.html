@@ -10,12 +10,15 @@
     //navigator.splashscreen.hide();
     if (navigator.network.connection.type == Connection.NONE) {
       networkError()
+      alert("Error");
     } else {
+    	alert("Loading");
       loadApp()
     }
   }
 
   function loadApp() {
+  	window.location="https://routeam.com/centers/1-epic-yoga";
     navigator.app.loadUrl("https://routeam.com/centers/1-epic-yoga")
   }
 
