@@ -1,16 +1,44 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>TEST PAGE/title>
-	</head>
+<!doctype html>
+<html lang="en">
+<head>
 
-	<body>
-		<div>
-		<center>
-		<h1>Hello World!</h1>
-		</center>
-		</div>	
+  <title>EpicHoga</title>
+  <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+  <script>
+  document.addEventListener("deviceready", onDeviceReady, false);
+  function onDeviceReady() {
+    //navigator.splashscreen.hide();
+    if (navigator.network.connection.type == Connection.NONE) {
+      networkError()
+    } else {
+      loadApp()
+    }
+  }
 
+  function loadApp() {
+    navigator.app.loadUrl("https://routeam.com/centers/1-epic-yoga")
+  }
 
-	</body>
+  function networkError() {
+    navigator.notification.alert('Epic requires an internet connection')
+    var $net = document.createElement('div')
+    $net.innerHTML = 'Epic requires an internet connection'
+    document.body.appendChild($net)
+  }
+  </script>
+
+  <style>
+  body {
+    padding: 15px;
+    background: #23252e;
+    color: #01ced3;
+    text-align: center;
+  }
+  div {
+    font-size: 20px;
+  }
+  </style>
+</head>
+<body>
+</body>
 </html>
